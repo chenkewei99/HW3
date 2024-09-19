@@ -4,7 +4,7 @@ library(ggplot2)  # Ensure ggplot2 is loaded
 
 
 # Task 1: Import the class one survey data
-C1survey <- read.csv("/Users/ckw/Downloads/Class 1 Survey Fall 2024_di.csv")
+C1survey <- read.csv("C1survey <- read.csv("https://raw.githubusercontent.com/chenkewei99/HW3/main/HW3/Class%201%20Survey%20Fall%202024_di.csv")")
 
 # Task 2: Determine the number of observations (a) and variables (b)
 num_observations <- nrow(C1survey)
