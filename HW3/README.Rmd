@@ -1,0 +1,62 @@
+---
+title: "README for HW3"
+output: html_document
+date: "2024-09-19"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Class 1 Survey Analysis
+
+## Project Description
+
+This project analyzes the **Class 1 Survey Fall 2024** dataset, which captures the responses of participants on various personal preferences and demographic information. The objective is to answer seven tasks using R programming, applying reproducible coding practices and providing insights through summary statistics and visualizations. The tasks involve importing the dataset, renaming variables for clarity, summarizing data, and visualizing certain categorical variables. The analysis aims to practice fundamental data analysis skills and demonstrate proficiency in R for handling real-world datasets.
+
+## Dataset Description
+
+The **Class 1 Survey Fall 2024_di.csv** dataset consists of 29 observations and 27 variables. These variables cover a range of topics, such as preferences for cats or dogs, opinions on public health topics, and demographic details (e.g., birth date, education level, and home country). 
+
+### Key Variables:
+- **like_cats**: Response to the question "Do you like cats?"
+- **like_dogs**: Response to the question "Do you like dogs?"
+- **island_item**: What the participant would bring to a deserted island.
+- **public_health_topic**: Chosen public health topic for work or study.
+- **birth_day** and **birth_month**: Day and month of birth.
+- **home_country**: Country of origin.
+
+The dataset is used to demonstrate simple data manipulation and visualization techniques in R.
+
+## Code Description
+
+The provided R script follows these steps to analyze the dataset:
+
+1. **Data Import**: The dataset is loaded from a CSV file into a dataframe for further manipulation.
+2. **Observations and Variables**: The script determines and prints the number of rows (observations) and columns (variables) in the dataset.
+3. **Variable Renaming**: The column names of the dataset are renamed to shorter, more descriptive versions, ensuring clarity for future analysis.
+4. **Summary Statistics**: Summary statistics for all variables in the dataset are generated to give an overview of the data.
+5. **Unique Responses**: The number of unique responses for each categorical variable is calculated to better understand the dataset’s diversity.
+6. **Response Distribution**: The distribution of responses for a selected variable ("Do you like cats?") is displayed.
+7. **Data Visualization**: A bar chart is created using `ggplot2` to visualize the distribution of responses to the "Do you like cats?" question.
+
+### Code Annotations:
+
+- The code is thoroughly annotated with comments to explain the purpose of each section, helping readers understand the workflow.
+- Functions and their parameters are clearly explained to ensure that anyone reviewing the code can follow the logic and reproduce the results.
+
+### Required Libraries:
+
+The following R libraries are used in the analysis:
+- **`dplyr`**: For data manipulation and summarization.
+- **`ggplot2`**: For data visualization.
+
+Make sure to install these libraries before running the code by using the command:
+```r
+install.packages(c("dplyr", "ggplot2"))
+
+
+## License
+
+This project is for educational purposes and is licensed under the WUSTL.
+
